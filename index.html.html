@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GETTING STARTED WITH BRACKETS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    .box {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        padding: 5px;
+        background: #f1f1f1;
+    }
+
+    .box a {
+        width: 40px;
+        height: 40px;
+        float: left;
+        text-indent: -9999px;
+        margin: 5px;
+        cursor: pointer;
+    }
+body{
+        text-align: center;
+    }
+
+    .color_one {
+        float:left;
+        position: absolute;
+        top: 40px;
+        right: 400px;
+        padding: 5px;
+        background: #f1f1f1;
+    }
+
+    .color_one a {
+        width: 40px;
+        height: 40px;
+        float: left;
+        text-indent: -9999px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    #red {
+        background: #e74c3c;
+    }
+
+    #blue {
+        background: #3498db;
+    }
+
+    #green {
+        background: #2ecc71;
+    }
+
+    #gray {
+        background: #34495e;
+    }
+
+    #yellow {
+        background: #f1c40f;
+    }
+
+    #orange {
+        background: #e67e22;
+    }
+
+    @import url("http://www.fontstatic.com/f=jooza");
+
+    .header {
+        height: 120px;
+    }
+
+    h1 {
+        font-family: 'jooza';
+        text-align: center;
+        font-size: 18px;
+    }
+
+    hr {
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
+
+    img {
+        float: left;
+        width: 15%;
+    }
+
+    #img1 {
+        padding: 0;
+    }
+
+    #img3 {
+        padding: 0;
+        float: right;
+        width: 15%;
+        padding: 5px;
+    }
+
+    #img2 {
+        display: block;
+        margin-left: 95px;
+        width: 25%;
+    }
+
+    .sec1 {
+        box-sizing: border-box;
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        padding: 5px;
+        /* background-image: url(./bg3.jpg) !important; */
+        box-shadow: 3px 4px 41px 0 rgba(0, 0, 0, .64);
+        margin-bottom: 60px;
+        background-color: white;
+    }
+
+    #tablecontainer,
+    #btn {
+        display: none;
+    }
+
+    #con {
+        max-width: 400px;
+        margin: auto;
+        background-color: white;
+    }
+
+    .btn {
+        padding: 16px 32px;
+        background-color: #09c;
+        color: #fff;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .data {
+        display: none;
+        margin: auto;
+        background-color: white;
+        box-shadow: 3px 4px 41px 0 rgba(0, 0, 0, .64);
+        max-width: 400px;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        padding: 16px 0;
+    }
+
+    .data input {
+        margin: 32px auto;
+        padding: 8px;
+        color: #333;
+        display: block;
+        width: 80%;
+    }
+</style>
+
+<body>
+
+
+    <div id="tablecontainer">
+        <div class="box">
+   <h>Page Background color</h><br>
+  <a onclick="chang('red')" id="red">#e74c3c</a>
+  <a onclick="change('blue')" id="blue">#3498db</a>
+  <a onclick="change('green')" id="green">#2ecc71</a>
+  <a onclick="change('gray')" id="gray">#34495e</a>
+  <a onclick="change('yellow')" id="yellow">#f1c40f</a>
+  <a onclick="change('orange')" id="orange">#e67e22</a>
+            <br>
+</div>
+      <script type="text/javascript">
+  function change(id) {
+    document.body.style.background = document.getElementById(id).innerHTML;
+  }
+</script> 
+        
+        <div class="box">
+            <h>Card Background color</h><br>
+            <a onclick="changecolor('red')" id="red">#e74c3c</a>
+            <a onclick="changecolor('blue')" id="blue">#3498db</a>
+            <a onclick="changecolor('green')" id="green">#2ecc71</a>
+            <a onclick="changecolor('gray')" id="gray">#34495e</a>
+            <a onclick="changecolor('yellow')" id="yellow">#f1c40f</a>
+            <a onclick="changecolor('orange')" id="orange">#e67e22</a>
+        </div>
+
+        <br>
+        <br><br><br><br><br><br>
+        <div id="con">
+            <div class="sec1" id="sec" style="background-color: green">
+                <div class="header">
+                    <img id="img1" src="eng.jpg" alt="alternatetext">
+                    <img id="img2" src="m.jpg" alt="alternatetext">
+                    <img id="img3" src="img1.jpg" alt="alternatetext">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <p id="name"></p>
+                <h1>الحمد لله أنتهت مسيرتي الجامعية</h1>
+                <hr>
+                <h1>‏الحمدلله ماختم جهد ولا تم سعي إلا بفضله الحمدلله على البلوغ<br> ثم الحمدلله على التمام 🎓</h1>
+                <hr>
+
+                <h1>‏ قد حصلت على شهادة البكالوريوس في تخصص <span id="sp"></span><br> بجامعة السلطان قابوس
+
+                    <span id="college"></span></h1>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <audio autoplay preload="none">
+            <source src="bg.mp3">
+        </audio>
+    </footer>
+
+    <form action="" id="data" class="data">
+        <h1 style="float:right;font-size: 15px;text-align:center;color:blueviolet">إن كانت فرحة التخرج عظيمة عندك، فهي
+            أغظم عند والديك اللذين سهروا الليالي لمساندتك، فاعمل بجد لتنال فرحتين فرحة التخرج، وفرحة أنك أدخلت الفرح على
+            قلب والديك
+        </h1>
+        <br>
+        <input id="dname" type="text" placeholder="أدخل أسمك الثلاثي">
+        <input id="dcollege" type="text" placeholder="أسم الكلية">
+        <input id="dmajor" type="text" placeholder="أسم التخصص">
+        <button type="button" id="sub" class="btn">
+            ok
+        </button>
+    </form>
+    <button id="btn" class="btn">download</button>
+    <script src=" jquery-3.5.1.min.js ">
+    </script>
+    <script src=" dom-to-image.min.js ">
+    </script>
+    <script src=" FileSaver.min.js ">
+    </script>
+    <script type="text/javascript">
+        function changecolor(id) {
+            document.getElementById(
+                "sec").style.backgroundColor = document.getElementById(id).innerHTML
+            document.getElementById(
+                "con").style.backgroundColor =
+                document.getElementById(
+                    id).value;
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            var x = document.querySelector("audio");
+
+            $("#data").slideDown();
+
+
+            $("#sub").on("click", function () {
+                var stuname = document.getElementById("dname").value;
+                document.getElementById("name").innerHTML = stuname;
+                var college = document.getElementById("dcollege").value;
+                document.getElementById("college").innerHTML = college;
+                var sp = document.getElementById("dmajor").value;
+                document.getElementById("sp").innerHTML = sp;
+                $("#data").slideUp(250, function () {
+                    $("#tablecontainer,#btn").slideDown()
+                });
+
+            })
+            $("#btn").on(" click ", function () {
+                var node = document.getElementById('sec');
+                domtoimage.toBlob(node).then(function (blob) {
+                    window.saveAs(blob, 'my-node.jpg');
+                });
+
+            })
+            $(document).on("click", function () {
+
+                x.play()
+            })
+        })
+    </script>
+</body>
+
+</html>
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+-->
